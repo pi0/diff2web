@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<title>Diff to HTML</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/hljs.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/diff2html.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/octicons.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body style="">
+	<div class="container">
+	
+		<div class="pull-right header">
+          <a href="https://github.com/ntkme/github-buttons">
+			<span class="hidden-xs"> View on GitHub </span>
+			<span class="octicon octicon-mark-github" aria-hidden="true"></span></a>
+        </div>
+	
+		<div class="loading-c">
+			<div class="loading">
+				<span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Working
+			</div>
+		</div>
+					
+		<h1><span>DIFF</span> <span>To</span> <span>HTML</span></h1>
+		<hr/>
+	
+		<ul class="nav nav-tabs nav-justified">
+
+			<li role="presentation" class="active">
+				<a href="#paste" aria-controls="paste" role="tab" data-toggle="tab">
+					Paste Diff
+				</a>
+			</li>
+
+			<li role="presentation" class="disabledTab">
+				<a href="#side-by-side" aria-controls="side-by-side" role="tab" data-toggle="tab">
+					Side By Side
+				</a>
+			</li>
+			<li role="presentation" class="disabledTab">
+				<a href="#line-by-line" aria-controls="line-by-line" role="tab" data-toggle="tab">
+					Line By Line
+				</a>
+			</li>
+
+		</ul>
+		 <div class="tab-content">
+			<!-- Paste TAB -->
+			<div role="tabpanel" class="tab-pane active" id="paste">
+				<br>
+				<div class="center">
+				<div id="dropzone" class="well">
+					Drag And Drop DIFF File Here   ||<br>
+					Simply Copy Paste Using <b>Ctrl+V</b> ||<br>
+					<form id="file-input-form">
+						<div class="fileUpload btn btn-primary">
+							<span class="fileUpload-item"><i class="glyphicon glyphicon-upload"></i>Upload</span>
+							<input type="file" class="upload" id="file-input" name="file-input" multiple="">
+						</div>
+					</form>
+				</div>
+				<br>
+				</div>
+			</div>
+			
+			<!-- Line By Line TAB -->
+			<div role="tabpanel" class="tab-pane" id="line-by-line">
+				<br>
+				<div id="line-by-line-content"></div>
+			</div>
+			
+			<!-- Side By Side TAB -->
+			<div role="tabpanel" class="tab-pane" id="side-by-side">
+				<br>
+				<div id="side-by-side-content"></div>
+			</div>
+		</div>
+		
+	</div>
+
+    <script src="./assets/js/jquery-2.1.4.min.js"></script>	
+    <script src="./assets/js/bootstrap.min.js"></script>	
+    <script src="./assets/js/filereader.js"></script>
+    <script src="./assets/js/diff2html.min.js"></script>
+    <script src="./assets/js/highlight.min.js"></script>
+    <script src="./assets/js/diff.js"></script>	
+</body>
+</html>

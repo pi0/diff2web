@@ -1,0 +1,97 @@
+body {
+	font-family: 'Source Sans Pro',sans-serif;
+}
+
+.header a{
+    display: block;
+    padding: 14px 0;
+    color: #666;
+    text-decoration: none;
+	font-family: Helvetica, arial, freesans, clean, sans-serif;
+	font-size: 14px;
+}
+
+.disabledTab{
+    pointer-events: none;
+}
+
+#line-by-line-content{
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+#side-by-side-content {
+	margin: 0 auto;
+}
+
+#dropzone input {
+	display:inline;
+}
+
+#dropzone {
+	text-align:center;
+	background-color: light-green;
+	padding:30px;
+	line-height:50px;
+	font-size:30px;
+}
+
+.drag  {
+    -moz-opacity: 20%;
+    -webkit-opacity: 20%;
+	cursor:move;
+}
+
+.center {
+	text-align:center;
+}
+
+
+.loading-c {
+	display:inline-block;
+	clear:both;
+	float:right;
+}
+
+.loading {
+	color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+	padding:10px;
+	margin: 10px 0px;
+	border-radius: 25px;
+	display:none;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
